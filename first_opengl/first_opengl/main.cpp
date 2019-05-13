@@ -18,7 +18,7 @@ GLuint createShaderProgram() {
     const char *vshaderSource =
         "#version 410    \n"
         "void main(void) \n"
-        "{gl_Position = vec4(1.0,0.0,0.0,1.0);}";
+        "{gl_Position = vec4(0.0,0.0,0.0,1.0);}";
     const char *fshaderSource =
         "#version 410    \n"
         "out vec4 color; \n"
@@ -46,8 +46,8 @@ void init(GLFWwindow* window) {
 }
 
 void display(GLFWwindow * window, double currentTime){
-   // glClearColor(1.0,0.0,0.0,1.0);
-   // glClear(GL_COLOR_BUFFER_BIT);
+    glClearColor(1.0,0.0,0.0,1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(renderingProgram);
     glPointSize(30.0f);
     glDrawArrays(GL_POINTS, 0, 1);
