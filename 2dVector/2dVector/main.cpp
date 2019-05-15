@@ -24,10 +24,10 @@ int main()
     {-1, -3, -1, -2 ,-4, -5}
     };
     int sum_of_hour_glass = 0;
-    int max_hour_glass = 0;
+    int max_hour_glass = -999999;
     int x = 0;
     int y = 0;
-    int nextrow = 1;
+  
     while (x+3<=vect.size()) {
        
         for (;y+3<=vect[0].size();y++)
@@ -50,7 +50,11 @@ int main()
             
            
             cout << "sum " << sum_of_hour_glass << endl;
-            max_hour_glass = max(sum_of_hour_glass,max_hour_glass);
+            if (sum_of_hour_glass >= max_hour_glass)
+            {
+                max_hour_glass = sum_of_hour_glass;
+            }
+            
             sum_of_hour_glass = 0;
             cout << endl;
         }
@@ -61,6 +65,6 @@ int main()
        
     }
     cout << "largest hour glass = " << max_hour_glass << endl;
-    return max_hour_glass;
+    return 0;
     
 }
