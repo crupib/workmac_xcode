@@ -22,8 +22,9 @@ GLuint createShaderProgram() {
     const char *fshaderSource =
         "#version 410    \n"
         "out vec4 color; \n"
-        "void main(void)\n"
-        "{color = vec4(0.0,0.0,1.0,1.0);}";
+        "void main(void) \n"
+    "{if(gl_FragCoord.x < 200) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
+//        "{color = vec4(1.0,0.0,1.0,1.0);}";
     
     GLuint vShader = glCreateShader(GL_VERTEX_SHADER);
     GLuint fShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -46,17 +47,18 @@ void init(GLFWwindow* window) {
 }
 
 void display(GLFWwindow * window, double currentTime){
-    glClearColor(1.0,0.0,0.0,1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+  //glClearColor(0.0,0.0,0.0,1.0);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glUseProgram(renderingProgram);
-    glPointSize(30.0f);
+    glPointSize(400.0f);
+   //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     glDrawArrays(GL_POINTS, 0, 1);
 }
 
 int main(int argc, const char * argv[]) {
     if (!glfwInit()) {exit(EXIT_FAILURE);}
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,1);
     glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
     GLFWwindow * window = glfwCreateWindow(600, 600, "Chapter2 - program1", NULL, NULL);
