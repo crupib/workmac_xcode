@@ -1,36 +1,47 @@
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <climits>
+#include <deque>
 #include <iostream>
+#include <list>
+#include <limits>
+#include <map>
+#include <queue>
+#include <set>
+#include <stack>
+#include <vector>
 
-#include <vector> // for 2D vector
+#define ll long long
+
+#define MIN(a, b) a < b ? a : b
+#define MAX(a, b) a > b ? a : b
 
 using namespace std;
 
 
-// Complete the dynamicArray function below.
-vector<int> dynamicArray(int n, vector<vector<int>> queries) {
-    vector<int> myvector(n);
-    int lastAnswer = 0;
-    int x,y = 0;
-    int seq = 0;
-    x = queries[0][0];
-    y = queries[0][1];
-    seq = ((x^lastAnswer)%n);
-    myvector[seq] = y;
-  //  cout << myvector[seq] << endl;
-    
-    
-    return myvector;
-}
 
-int main()
-{
-    int q=3;
-    vector<int> myvector(q);
-    vector<vector<int>> queries(q);
-    queries[0].resize(3);
-    queries[0][0] = 2;
-    queries[0][1] = 5;
-    myvector = dynamicArray(3, queries);
-    cout << myvector[0] <<" " << myvector[1] << " " <<myvector[2]<< endl;
+vector<int> *v;
+
+int main(int argc, char *argv[]) {
+    int n, t, lastAns = 0;
+    scanf("%d%d", &n, &t);
     
+    v = new vector<int>[n];
+    while(t--) {
+        int a, x, y;
+        scanf("%d%d%d", &a, &x, &y);
+        
+        if(a == 1) {
+            v[(x ^ lastAns)% n].push_back(y);
+        }
+        else {
+            vector<int> c = v[(x ^ lastAns)% n];
+            lastAns = c[y % c.size()];
+            cout << lastAns << endl;
+        }
+    }
     
+    delete []v;
+    return 0;
 }
