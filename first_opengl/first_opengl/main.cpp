@@ -21,10 +21,18 @@ GLuint createShaderProgram() {
     "{ gl_Position = vec4(0.0, 0.0, 0.0, 1.0); }";
     
     const char *fshaderSource =
+<<<<<<< HEAD
     "#version 410 \n"
     "out vec4 color; \n"
     "void main(void) \n"
     "{ if (gl_FragCoord.x < 200) color = vec4(0.0, 1.0, 0.0, 1.0); else color = vec4(1.0, 0.0, 0.0, 1.0); }";
+=======
+        "#version 410    \n"
+        "out vec4 color; \n"
+        "void main(void) \n"
+    "{if(gl_FragCoord.x < 200) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
+//        "{color = vec4(1.0,0.0,1.0,1.0);}";
+>>>>>>> f8cfb6abdfd795c9d9d79c4ea14f615f400d0f9e
     
     GLuint vShader = glCreateShader(GL_VERTEX_SHADER);
     GLuint fShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -49,16 +57,27 @@ void init(GLFWwindow* window) {
     cout << glGetString(GL_VERSION) << endl;
 }
 
+<<<<<<< HEAD
 void display(GLFWwindow* window, double currentTime) {
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(rendering_program);
     glPointSize(400.0f);
     glDrawArrays(GL_POINTS,0,1);
+=======
+void display(GLFWwindow * window, double currentTime){
+  //glClearColor(0.0,0.0,0.0,1.0);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glUseProgram(renderingProgram);
+    glPointSize(400.0f);
+   //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glDrawArrays(GL_POINTS, 0, 1);
+>>>>>>> f8cfb6abdfd795c9d9d79c4ea14f615f400d0f9e
 }
 
 int main(void) {
     if (!glfwInit()) { exit(EXIT_FAILURE); }
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+<<<<<<< HEAD
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
     
     // these two lines added for mac (forces proper OpenGL version)
@@ -74,6 +93,13 @@ int main(void) {
     }
     
     // these two lines are also added for Mac (some Mac screen resolutions confuse GLFW)
+=======
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,1);
+    glfwWindowHint(GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
+    GLFWwindow * window = glfwCreateWindow(600, 600, "Chapter2 - program1", NULL, NULL);
+    if (window == NULL) { printf("window\n");exit(EXIT_FAILURE);}
+>>>>>>> f8cfb6abdfd795c9d9d79c4ea14f615f400d0f9e
     int actualScreenWidth, actualScreenHeight;
     glfwGetFramebufferSize(window, &actualScreenWidth, &actualScreenHeight);
     
