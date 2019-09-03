@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8648F269231EC0D5002D9E69 /* sparse_arrauys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sparse_arrauys; sourceTree = BUILT_PRODUCTS_DIR; };
+		8648F269231EC0D5002D9E69 /* sparse_arrays */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sparse_arrays; sourceTree = BUILT_PRODUCTS_DIR; };
 		8648F26C231EC0D5002D9E69 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		8648F260231EC0D5002D9E69 = {
 			isa = PBXGroup;
 			children = (
-				8648F26B231EC0D5002D9E69 /* sparse_arrauys */,
+				8648F26B231EC0D5002D9E69 /* sparse_arrays */,
 				8648F26A231EC0D5002D9E69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		8648F26A231EC0D5002D9E69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8648F269231EC0D5002D9E69 /* sparse_arrauys */,
+				8648F269231EC0D5002D9E69 /* sparse_arrays */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8648F26B231EC0D5002D9E69 /* sparse_arrauys */ = {
+		8648F26B231EC0D5002D9E69 /* sparse_arrays */ = {
 			isa = PBXGroup;
 			children = (
 				8648F26C231EC0D5002D9E69 /* main.cpp */,
 			);
-			path = sparse_arrauys;
+			path = sparse_arrays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8648F268231EC0D5002D9E69 /* sparse_arrauys */ = {
+		8648F268231EC0D5002D9E69 /* sparse_arrays */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8648F270231EC0D5002D9E69 /* Build configuration list for PBXNativeTarget "sparse_arrauys" */;
+			buildConfigurationList = 8648F270231EC0D5002D9E69 /* Build configuration list for PBXNativeTarget "sparse_arrays" */;
 			buildPhases = (
 				8648F265231EC0D5002D9E69 /* Sources */,
 				8648F266231EC0D5002D9E69 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = sparse_arrauys;
+			name = sparse_arrays;
 			productName = sparse_arrauys;
-			productReference = 8648F269231EC0D5002D9E69 /* sparse_arrauys */;
+			productReference = 8648F269231EC0D5002D9E69 /* sparse_arrays */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8648F264231EC0D5002D9E69 /* Build configuration list for PBXProject "sparse_arrauys" */;
+			buildConfigurationList = 8648F264231EC0D5002D9E69 /* Build configuration list for PBXProject "sparse_arrays" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8648F268231EC0D5002D9E69 /* sparse_arrauys */,
+				8648F268231EC0D5002D9E69 /* sparse_arrays */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8648F264231EC0D5002D9E69 /* Build configuration list for PBXProject "sparse_arrauys" */ = {
+		8648F264231EC0D5002D9E69 /* Build configuration list for PBXProject "sparse_arrays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8648F26E231EC0D5002D9E69 /* Debug */,
@@ -266,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8648F270231EC0D5002D9E69 /* Build configuration list for PBXNativeTarget "sparse_arrauys" */ = {
+		8648F270231EC0D5002D9E69 /* Build configuration list for PBXNativeTarget "sparse_arrays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8648F271231EC0D5002D9E69 /* Debug */,
