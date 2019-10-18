@@ -22,10 +22,10 @@ GLuint createShaderProgram() {
     
     const char *fshaderSource =
 
-        "#version 410    \n"
-        "out vec4 color; \n"
-        "void main(void) \n"
-        "{if(gl_FragCoord.x < 200) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
+    "#version 410    \n"
+    "out vec4 color; \n"
+    "void main(void) \n"
+    "{if(gl_FragCoord.x < 200) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
 
 
     GLuint vShader = glCreateShader(GL_VERTEX_SHADER);
@@ -57,7 +57,7 @@ void display(GLFWwindow * window, double currentTime){
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glUseProgram(rendering_program);
     glPointSize(400.0f);
-   //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     glDrawArrays(GL_POINTS, 0, 1);
 }
 
