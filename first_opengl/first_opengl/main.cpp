@@ -2,10 +2,10 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdocumentation"
 
-#include <iostream>
+#include <iostream>//
 #define GLEW_STATIC
-#include "/usr/local/Cellar/glew/2.1.0/include/GL/glew.h"
-#include "/usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h"
+#include "/usr/local/Cellar/glew/2.1.0_1/include/GL/glew.h"
+#include "/usr/local/Cellar/glfw/3.3.2/include/GLFW/glfw3.h"
 
 using namespace std;
 

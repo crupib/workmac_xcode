@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		862F75C8228354A900771407 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 862F75C7228354A900771407 /* main.cpp */; };
-		862F75DA228364FD00771407 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D9228364FD00771407 /* libGLEW.a */; };
-		862F75DB228369C100771407 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D322835C9000771407 /* libglfw.3.3.dylib */; };
 		862F75DC228369D700771407 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D1228354EC00771407 /* OpenGL.framework */; };
+		865A3C33241189AD00579789 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D72283616A00771407 /* CoreFoundation.framework */; };
+		865A3C34241189C700579789 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75CF228354DD00771407 /* GLUT.framework */; };
+		865A3C3B24118A9F00579789 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A3C3924118A9F00579789 /* libGLEW.2.1.0.dylib */; };
+		865A3C3C24118A9F00579789 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A3C3A24118A9F00579789 /* libGLEW.a */; };
+		865A3C3E24118ACC00579789 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 865A3C3D24118ACC00579789 /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,10 +33,10 @@
 		862F75C7228354A900771407 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		862F75CF228354DD00771407 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		862F75D1228354EC00771407 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		862F75D322835C9000771407 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		862F75D522835CEA00771407 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		862F75D72283616A00771407 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		862F75D9228364FD00771407 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		865A3C3924118A9F00579789 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		865A3C3A24118A9F00579789 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.a; sourceTree = "<group>"; };
+		865A3C3D24118ACC00579789 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865A3C3E24118ACC00579789 /* libglfw.3.3.dylib in Frameworks */,
+				865A3C3B24118A9F00579789 /* libGLEW.2.1.0.dylib in Frameworks */,
+				865A3C3C24118A9F00579789 /* libGLEW.a in Frameworks */,
+				865A3C34241189C700579789 /* GLUT.framework in Frameworks */,
 				862F75DC228369D700771407 /* OpenGL.framework in Frameworks */,
-				862F75DB228369C100771407 /* libglfw.3.3.dylib in Frameworks */,
-				862F75DA228364FD00771407 /* libGLEW.a in Frameworks */,
+				865A3C33241189AD00579789 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +84,10 @@
 		862F75CE228354DD00771407 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				862F75D9228364FD00771407 /* libGLEW.a */,
+				865A3C3D24118ACC00579789 /* libglfw.3.3.dylib */,
+				865A3C3924118A9F00579789 /* libGLEW.2.1.0.dylib */,
+				865A3C3A24118A9F00579789 /* libGLEW.a */,
 				862F75D72283616A00771407 /* CoreFoundation.framework */,
-				862F75D522835CEA00771407 /* libGLEW.2.1.0.dylib */,
-				862F75D322835C9000771407 /* libglfw.3.3.dylib */,
 				862F75D1228354EC00771407 /* OpenGL.framework */,
 				862F75CF228354DD00771407 /* GLUT.framework */,
 			);
@@ -114,7 +120,7 @@
 		862F75BC228354A900771407 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "William Louis Crupi";
 				TargetAttributes = {
 					862F75C3228354A900771407 = {
@@ -128,6 +134,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 862F75BB228354A900771407;
 			productRefGroup = 862F75C5228354A900771407 /* Products */;
@@ -265,11 +272,14 @@
 		862F75CC228354A900771407 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3/lib,
 					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -278,11 +288,14 @@
 		862F75CD228354A900771407 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw/3.3/lib,
 					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
