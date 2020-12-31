@@ -1,42 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "0FE6A93E-B761-4DFE-84CC-FA336BD10EBA"
    type = "1"
    version = "2.0">
-<<<<<<< HEAD
-=======
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "A4083807-F34F-430F-9711-6BA9BE4AB221"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "first_opengl/main.cpp"
-            timestampString = "579647711.47157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "main(int argc, const char * argv[])"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "6B69BAD7-9A95-4BDA-8DE7-23331F8DE935"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "first_opengl/main.cpp"
-            timestampString = "579647711.471921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "main(int argc, const char * argv[])"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "createShaderProgram()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
->>>>>>> f8cfb6abdfd795c9d9d79c4ea14f615f400d0f9e
 </Bucket>

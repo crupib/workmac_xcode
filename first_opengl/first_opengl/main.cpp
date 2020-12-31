@@ -4,8 +4,11 @@
 
 #include <iostream>//
 #define GLEW_STATIC
-#include "/usr/local/Cellar/glew/2.1.0_1/include/GL/glew.h"
-#include "/usr/local/Cellar/glfw/3.3.2/include/GLFW/glfw3.h"
+//#include "/usr/local/Cellar/glew/2.2.0/include/GL/glew.h"
+//#include "/usr/local/Cellar/glfw/3.3.2/include/GLFW/glfw3.h"
+#include <glew.h>
+#include <glfw3.h>
+#include <CoreGraphics/CoreGraphics.h>
 
 using namespace std;
 
@@ -13,7 +16,8 @@ using namespace std;
 
 GLuint rendering_program;
 GLuint vao[numVAOs];
-
+size_t h ;
+size_t w;
 GLuint createShaderProgram() {
     const char *vshaderSource =
     "#version 410 \n"
@@ -25,7 +29,7 @@ GLuint createShaderProgram() {
     "#version 410    \n"
     "out vec4 color; \n"
     "void main(void) \n"
-    "{if(gl_FragCoord.x < 200) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
+    "{if(gl_FragCoord.x < 590) color = vec4(0.0,1.0,0.0,1.0); else  color = vec4(1.0,0.0,0.0,1.0);}";
 
 
     GLuint vShader = glCreateShader(GL_VERTEX_SHADER);
@@ -62,6 +66,12 @@ void display(GLFWwindow * window, double currentTime){
 }
 
 int main(void) {
+    auto mainDisplayId = CGMainDisplayID();
+
+
+    w = CGDisplayPixelsWide(mainDisplayId);
+    h =  CGDisplayPixelsHigh(mainDisplayId);
+
     if (!glfwInit()) { exit(EXIT_FAILURE); }
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 
@@ -70,7 +80,8 @@ int main(void) {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT,GL_TRUE);
     GLFWwindow * window = glfwCreateWindow(600, 600, "Chapter2 - program1", NULL, NULL);
     if (window == NULL) { printf("window\n");exit(EXIT_FAILURE);}
-    int actualScreenWidth, actualScreenHeight;
+    int actualScreenWidth;
+    int actualScreenHeight;
     glfwGetFramebufferSize(window, &actualScreenWidth, &actualScreenHeight);
     
     glfwMakeContextCurrent(window);
