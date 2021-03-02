@@ -1,47 +1,51 @@
-#include <cmath>
-#include <cstdio>
-#include <cstdlib>
-#include <climits>
-#include <deque>
+//
+
 #include <iostream>
-#include <list>
-#include <limits>
-#include <map>
-#include <queue>
-#include <set>
-#include <stack>
 #include <vector>
-
-#define ll long long
-
-#define MIN(a, b) a < b ? a : b
-#define MAX(a, b) a > b ? a : b
-
 using namespace std;
 
-
-
-vector<int> *v;
-
-int main(int argc, char *argv[]) {
-    int n, t, lastAns = 0;
-    scanf("%d%d", &n, &t);
+vector<int> dynamicArray(int n, vector<vector<int>> queries) {
+    vector<int> seqList;
+    vector<vector<int>> list(n);
+    int lastAnswer = 0;
+    int i, seq, x;
     
-    v = new vector<int>[n];
-    while(t--) {
-        int a, x, y;
-        scanf("%d%d%d", &a, &x, &y);
+    for (i = 0; i < queries.size(); i++) {
         
-        if(a == 1) {
-            v[(x ^ lastAns)% n].push_back(y);
-        }
-        else {
-            vector<int> c = v[(x ^ lastAns)% n];
-            lastAns = c[y % c.size()];
-            cout << lastAns << endl;
+        x = queries[i][1];
+        seq = ((x ^ lastAnswer) % n);
+        
+        if (queries[i][0] == 1) {
+            
+            list[seq].push_back(queries[i][2]);
+            
+        } else {
+            
+            long int size = list[seq].size();
+            lastAnswer = list[seq][queries[i][2] % size];
+            seqList.push_back(lastAnswer);
         }
     }
     
-    delete []v;
+    return seqList;
+}
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    int n, q;
+    cin >> n >> q;
+    vector<vector<int>> queries(q);
+    for (int i = 0; i < q; i++) {
+        queries[i].resize(3);
+   
+        for (int j = 0; j < 3; j++) {
+            cin >> queries [i][j];
+        }
+    }
+    vector<int> result = dynamicArray(n, queries);
+    
+    for (int i = 0; i < result.size(); i++) {
+        cout << result[i] << endl;
+    }
+
     return 0;
 }
