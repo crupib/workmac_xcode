@@ -4,9 +4,10 @@
 
 #include <iostream>//
 #define GLEW_STATIC
-//#include "/usr/local/Cellar/glew/2.2.0/include/GL/glew.h"
-//#include "/usr/local/Cellar/glfw/3.3.2/include/GLFW/glfw3.h"
+//#include "/usr/local/Cellar/glew/2.2.0_1/include/GL/glew.h"
 #include <glew.h>
+//#include "/usr/local/Cellar/glfw/3.3.3/include/GLFW/glfw3.h"
+
 #include <glfw3.h>
 #include <CoreGraphics/CoreGraphics.h>
 
