@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		862F75C8228354A900771407 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 862F75C7228354A900771407 /* main.cpp */; };
+<<<<<<< HEAD
+		862F75DB228369C100771407 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D322835C9000771407 /* libglfw.3.3.dylib */; };
+		862F75DC228369D700771407 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D1228354EC00771407 /* OpenGL.framework */; };
+		8660F9C425EEEEF100518A9C /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8660F9C325EEEEF100518A9C /* libGLEW.a */; };
+=======
 		862F75DC228369D700771407 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D1228354EC00771407 /* OpenGL.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		865A3C33241189AD00579789 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75D72283616A00771407 /* CoreFoundation.framework */; };
 		865A3C34241189C700579789 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F75CF228354DD00771407 /* GLUT.framework */; };
 		867EA9FF25EEE6220015C999 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EA9FE25EEE6220015C999 /* libglfw.3.3.dylib */; };
 		867EAA0125EEE66A0015C999 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 867EAA0025EEE66A0015C999 /* libGLEW.a */; };
 		86E8519B259E30B700B34AEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E8519A259E30B500B34AEA /* CoreGraphics.framework */; };
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,11 +50,23 @@
 		862F75CF228354DD00771407 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		862F75D1228354EC00771407 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		862F75D72283616A00771407 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+<<<<<<< HEAD
 		867EA9FB25EEE56C0015C999 /* first_opengl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = first_opengl.xcodeproj; sourceTree = "<group>"; };
 		867EA9FE25EEE6220015C999 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		867EAA0025EEE66A0015C999 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.a; sourceTree = "<group>"; };
+=======
+<<<<<<< HEAD
+		862F75D9228364FD00771407 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		8660F9C325EEEEF100518A9C /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../../usr/local/Cellar/glew/2.2.0/lib/libGLEW.a; sourceTree = "<group>"; };
+=======
+		865A3C3D24118ACC00579789 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		867F9DB5259E2BF2000362D7 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.2.0/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		867F9DB8259E2C17000362D7 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../../../usr/local/Cellar/glew/2.2.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		867F9DBA259E2C50000362D7 /* local */ = {isa = PBXFileReference; lastKnownFileType = folder; name = local; path = ../../../../../../usr/local; sourceTree = "<group>"; };
+>>>>>>> ec1772d1f6219b41150929e579c687dffb871ab5
 		86E8519A259E30B500B34AEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		86E8519C259E30DD00B34AEA /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +74,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				867EAA0125EEE66A0015C999 /* libGLEW.a in Frameworks */,
 				867EA9FF25EEE6220015C999 /* libglfw.3.3.dylib in Frameworks */,
+=======
+<<<<<<< HEAD
+				8660F9C425EEEEF100518A9C /* libGLEW.a in Frameworks */,
+				862F75DC228369D700771407 /* OpenGL.framework in Frameworks */,
+				862F75DB228369C100771407 /* libglfw.3.3.dylib in Frameworks */,
+=======
+>>>>>>> ec1772d1f6219b41150929e579c687dffb871ab5
 				86E8519B259E30B700B34AEA /* CoreGraphics.framework in Frameworks */,
 				865A3C34241189C700579789 /* GLUT.framework in Frameworks */,
 				862F75DC228369D700771407 /* OpenGL.framework in Frameworks */,
 				865A3C33241189AD00579789 /* CoreFoundation.framework in Frameworks */,
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +123,25 @@
 		862F75CE228354DD00771407 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				867EAA0025EEE66A0015C999 /* libGLEW.a */,
 				867EA9FE25EEE6220015C999 /* libglfw.3.3.dylib */,
 				867EA9FB25EEE56C0015C999 /* first_opengl.xcodeproj */,
 				86E8519C259E30DD00B34AEA /* InterfaceBuilderKit.framework */,
 				86E8519A259E30B500B34AEA /* CoreGraphics.framework */,
+=======
+<<<<<<< HEAD
+				862F75D9228364FD00771407 /* libGLEW.a */,
+				8660F9C325EEEEF100518A9C /* libGLEW.a */,
+=======
+				86E8519C259E30DD00B34AEA /* InterfaceBuilderKit.framework */,
+				86E8519A259E30B500B34AEA /* CoreGraphics.framework */,
+				867F9DBA259E2C50000362D7 /* local */,
+				867F9DB8259E2C17000362D7 /* libGLEW.a */,
+				867F9DB5259E2BF2000362D7 /* libGLEW.2.2.0.dylib */,
+				865A3C3D24118ACC00579789 /* libglfw.3.3.dylib */,
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
+>>>>>>> ec1772d1f6219b41150929e579c687dffb871ab5
 				862F75D72283616A00771407 /* CoreFoundation.framework */,
 				862F75D1228354EC00771407 /* OpenGL.framework */,
 				862F75CF228354DD00771407 /* GLUT.framework */,
@@ -331,13 +372,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
 					/usr/local/Cellar/glew/2.2.0_1/lib,
 					/usr/local/Cellar/glfw/3.3.3/lib,
+=======
+<<<<<<< HEAD
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/glew/2.2.0/lib,
+=======
+					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
+>>>>>>> ec1772d1f6219b41150929e579c687dffb871ab5
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					/usr/local/Cellar/glew/2.2.0/lib,
 					/usr/local/Cellar/glfw/3.3.2/lib,
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +403,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
+					/usr/local/Cellar/glfw/3.3.2/lib,
+					/usr/local/Cellar/glew/2.1.0_1/lib,
+					/usr/local/Cellar/glew/2.2.0/lib,
+=======
 					/usr/local/Cellar/glew/2.2.0/lib,
 					/usr/local/Cellar/glfw/3.3.2/lib,
 					/usr/local/Cellar/glfw/3.3.3/lib,
@@ -358,8 +415,14 @@
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
+<<<<<<< HEAD
 					/usr/local/Cellar/glew/2.2.0_1/lib,
 					/usr/local/Cellar/glfw/3.3.3/lib,
+=======
+					/usr/local/Cellar/glew/2.2.0/lib,
+					/usr/local/Cellar/glfw/3.3.2/lib,
+>>>>>>> 52866f03c6ca69b111acbad7e3fa0be153e755dd
+>>>>>>> ec1772d1f6219b41150929e579c687dffb871ab5
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
